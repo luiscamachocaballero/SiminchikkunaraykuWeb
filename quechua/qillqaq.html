@@ -1,0 +1,570 @@
+
+<!DOCTYPE html>
+	<html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Siminchikkunarayku  </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Quechua" />
+	<meta name="keywords" content="siminchikkunarayku, quechua, runasimi, asr, reinvindicación, kichwa, traductor, andes, andino, tecnología, precolombino, aymara, ashanka, awjun, shipino, wanpis, kauki, kawsay" />
+	
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="../css/simple-line-icons.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="../css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+
+	
+  <!-- Modernizr -->
+  <script src="../js/modernizr.js"></script>
+
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<link rel="stylesheet" id="theme-switch" href="../css/style.css">
+	<link rel="stylesheet" id="theme-switch" href="../css/slick.css">
+	<link rel="stylesheet" id="theme-switch" href="../css/slick-theme.css">
+	<!-- End demo purposes only -->
+
+
+
+	<style type="text/css">
+	#musica {height:0;width:0;}
+	</style>
+
+	<script>
+	// Array con todas las imágenes que deseamos que se vayan cambiando a
+	// cada clic
+	var imagenes=Array("../images/icons/image1.png","../images/icons/image2.png");
+	var imagenVisible=0;
+ 
+	// Función que cambia la imagen actual por la siguiente
+	function cambiar(img)
+	{
+		imagenVisible++;
+		if(imagenVisible>=imagenes.length)
+		{
+			imagenVisible=0;
+		}
+		img.src=imagenes[imagenVisible];
+		cargarSiguienteImagen();
+	}
+ 
+	/**
+	 * Esta función carga la siguiente imagen para no tener que esperar su carga
+	 * en el momento de mostrarla.
+	 */
+	function cargarSiguienteImagen()
+	{
+		if((imagenVisible+1)<imagenes.length)
+		{
+			console.log(imagenVisible+1);
+			var imgTmp=new Image();
+			imgTmp.src=imagenes[imagenVisible+1];
+		}
+	}
+ 
+	window.onload=function() {
+		cargarSiguienteImagen();
+	}
+	
+	
+	
+	
+	function openAudio(word){
+			
+		    var imagen = document.getElementById('imagen').src;
+			var flag = "0";
+			if (imagen.includes('1')){
+				flag = 1;
+			} else {
+				flag = 0;
+			}			
+		
+			if (flag == "1"){
+				if (word == "quechua") quechua.play();
+				if (word == "que") que.play();
+				if (word == "como") como.play();
+				if (word == "inspiracion") inspiracion.play();
+				if (word == "proyectos") proyectos.play();
+				if (word == "nosotros") nosotros.play();
+				if (word == "eventos") eventos.play();
+				if (word == "contactos") contactos.play();
+				if (word == "idiomas") idiomas.play();
+				
+				if (word == "corpus") corpus.play();
+				if (word == "investigaciones") investigaciones.play();
+				if (word == "proyectos_menu") proyectos_menu.play();
+				if (word == "que_hacemos") que_hacemos.play();
+				if (word == "como_lo_hacemos") como_lo_hacemos.play();
+				if (word == "que_nos_inspira") que_nos_inspira.play();
+				
+				if (word == "proyectos_seccion") proyectos_seccion.play();
+				if (word == "corpus_quechua") corpus_quechua.play();
+				if (word == "traductor_quechua") traductor_quechua.play();
+				if (word == "programas_radio") programas_radio.play();
+				//if (word == "eventos") que_nos_inspira.play();
+				
+				if (word == "nosotros_seccion") nosotros_seccion.play();
+				if (word == "nosotros_frase1") nosotros_frase1.play();
+				
+				if (word == "escritores") escritores.play();
+				if (word == "artistas") artistas.play();
+				if (word == "comunidad") comunidad.play();
+				if (word == "investigadores_seccion") investigadores_seccion.play();
+				if (word == "ingenieros") ingenieros.play();
+				if (word == "universidades") universidades.play();
+				
+				if (word == "contactanos_seccion") contactanos_seccion.play();
+				if (word == "contactanos_frase") contactanos_frase.play();
+				
+				if (word == "estadisticas_seccion") estadisticas_seccion.play();
+				if (word == "continente") continente.play();
+				if (word == "paises") paises.play();
+				if (word == "personas") personas.play();
+				if (word == "lenguas") lenguas.play();
+			}
+	}
+		
+	</script>
+	
+	<style>
+	img {cursor:pointer;}
+	</style>
+	
+	<script type="text/javascript">
+	var quechua = new Audio();
+	var que = new Audio();
+	var como = new Audio();
+	var inspiracion = new Audio();
+	var proyectos = new Audio();
+	var nosotros = new Audio();
+	var eventos = new Audio();
+	var idiomas = new Audio();
+	var contactos = new Audio();
+
+	var corpus = new Audio();
+	var investigaciones = new Audio();
+	var proyectos_menu = new Audio();
+	var que_hacemos = new Audio();
+	var como_lo_hacemos = new Audio();
+	var que_nos_inspira = new Audio();
+
+	var proyectos_seccion = new Audio();
+	var corpus_quechua = new Audio();
+	var traductor_quechua = new Audio();
+	var programas_radio = new Audio();
+	var eventos = new Audio();
+
+	var nosotros_seccion = new Audio();
+	var nosotros_frase1 = new Audio();
+
+
+	var escritores = new Audio();
+	var artistas = new Audio();
+	var comunidad = new Audio();
+	var investigadores_seccion = new Audio();
+	var ingenieros = new Audio();
+	var universidades = new Audio();
+
+
+	var contactanos_seccion = new Audio();
+	var contactanos_frase = new Audio();
+
+	var estadisticas_seccion = new Audio();
+	var continente = new Audio();
+	var paises = new Audio();
+	var personas = new Audio();
+	var lenguas = new Audio();
+
+	quechua.src = 'audio/siminchikmanta.mp3';
+	como.src = 'audio/como.mp3';
+	que.src = 'audio/que.mp3';
+	inspiracion.src = 'audio/munayninchik.mp3';
+	proyectos.src = 'audio/ruwayninchik.mp3';
+	nosotros.src = 'audio/nuqanchik.mp3';
+	eventos.src = 'audio/llamkayninchikkuna.mp3';
+	idiomas.src = 'audio/idiomas.mp3';
+	contactos.src = 'audio/riqsinakusun_1.mp3';
+
+	corpus.src = 'audio/qillqakuna_uyariykunapas_1.mp3';
+	investigaciones.src = 'audio/yachay_maskapaykuna.mp3';
+	que_hacemos.src = 'audio/que_hacemos.mp3';
+	proyectos_menu.src = 'audio/ruwaykuna.mp3';
+	como_lo_hacemos.src = 'audio/imaynatam_ruwasunchik.mp3';
+	que_nos_inspira.src = 'audio/imam_sunqunchikta_kuyuchin.mp3';
+
+	proyectos_seccion.src = 'audio/ruwayninchikkuna.mp3';
+	corpus_quechua.src = 'audio/qillqakuna_uyariykunapas.mp3';
+	traductor_quechua.src = 'audio/siminchik_tikrachik.mp3';
+	programas_radio.src = 'audio/wayra_wasipi_rimaykuna.mp3';
+	eventos.src = 'audio/llamkayninchikkuna.mp3';
+
+
+	nosotros_seccion.src = 'audio/nuqaykumanta.mp3';
+	nosotros_frase1.src = 'audio/frase1.mp3';
+
+	escritores.src = 'audio/qillqaqkuna.mp3';
+	artistas.src = 'audio/takiqkuna.mp3';
+	comunidad.src = 'audio/runamasinchikkuna.mp3';
+	investigadores_seccion.src = 'audio/yachay_qatipaqkuna.mp3';
+	ingenieros.src = 'audio/qispichikkuna.mp3';
+	universidades.src = 'audio/hatun_yachay_wasikuna.mp3';
+
+	contactanos_seccion.src = 'audio/riqsinakusun_2.mp3';
+	contactanos_frase.src = 'audio/frase2.mp3';
+
+	estadisticas_seccion.src = 'audio/yupaykuna.mp3';
+	continente.src = 'audio/tiqsimuyu.mp3';
+	paises.src = 'audio/suyukuna.mp3';
+	personas.src = 'audio/runakuna.mp3';
+	lenguas.src = 'audio/simikuna.mp3';
+
+	</script>
+
+
+
+	
+	<!-- Demo CSS -->
+  <link rel="stylesheet" href="../css/demo.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+
+  <!-- Modernizr -->
+  <script src="../js/modernizr.js"></script>
+  
+  <style>
+    .flexslider {
+      margin-bottom: 10px;
+    }
+
+    .flex-control-nav {
+      position: relative;
+      bottom: auto;
+    }
+
+    .custom-navigation {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+
+    margin-top: -430px;    }
+
+@media screen and (max-width: 1100px) {
+    .custom-navigation {
+    margin-top: -15%;}
+}
+@media screen and (max-width: 440px) {
+    
+#fh5co-home{
+	height: 250px;
+}
+
+.flexslider{
+	display: none;
+}
+}
+
+    .custom-navigation > * {
+      display: table-cell;
+    }
+
+    .custom-navigation > a {
+      width: 50px;
+    }
+
+    .custom-navigation .flex-next {
+      text-align: right;
+    }
+  </style>
+  
+	
+ 	</head>
+	<body>
+
+	<section>
+		<div class="" style="background: #00a7a3; height:50px;">
+			<div class="container">
+				<li class="multilang">
+					<a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" >
+						<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
+							<option value="../qillqaq.html" >Español</option>
+							<option value="../ingles/qillqaq.html">English</option>
+							<option value="../quechua/qillqaq.html" selected="selected">Quechua</option>
+						</select>
+					</a> 
+				</li>
+				<li class="suscripcion">
+					<a href="suscripcion.html" class="btn btn-primary ">Yaykupakamuy</a>
+				</li>
+				
+			</div>
+		</div>
+	</section>
+	<header role="banner" id="fh5co-header">
+
+		<div class="container">
+			<nav class="navbar navbar-default">
+		        <div class="navbar-header">
+		        	<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+					<a class="navbar-brand" style = "background-image: url(../images/logoreal.png); width: 60px; height: 60px;" href="index.html">
+						<p style="  text-indent: 60px;   text-transform: uppercase; color: #000; font-size: 18px; ">siminchikkunarayku</p>
+					</a> 
+				</div>
+				
+				
+		        <div id="navbar" class="navbar-collapse collapse">
+					  <ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#" data-nav-section="home" onmouseover="openAudio('quechua')" onmouseout="quechua.pause();"><span>Qichwa</span></a></li>
+						<li><a href="#" data-nav-section="que" onmouseover="openAudio('que');" onmouseout="que.pause();"><span>¿Imataq?</span></a></li>
+						<li><a href="#" data-nav-section="work" onmouseover="openAudio('como');" onmouseout="como.pause();"><span>¿Imaynata?</span></a></li>
+						<li><a href="#" data-nav-section="testimonials" onmouseover="openAudio('inspiracion');" onmouseout="inspiracion.pause();"><span>Munayninchik</span></a></li>
+						<li><a href="#" data-nav-section="services" onmouseover="openAudio('proyectos');" onmouseout="proyectos.pause();" ><span>Ruwayninchik</span></a></li>
+						<li><a href="#" data-nav-section="about" onmouseover="openAudio('nosotros');" onmouseout="nosotros.pause();" ><span>Ñuqanchik</span></a></li>
+						<li><a href="#" data-nav-section="eventos" onmouseover="openAudio('eventos');" onmouseout="eventos.pause();" ><span>Willakuykuna</span></a></li>
+						<li><img id="imagen" src="../images/icons/image1.png" onclick="cambiar(this);" class="img-responsive; background-position:center; " style="width:20px; height:20px; margin-top: 20px;"></li>
+					  </ul>
+		        </div>
+			</nav>
+			  
+		  </div>
+	</header>
+
+
+	
+
+<script> 
+function openSection(texto){
+	window.location.replace("index.html#"+texto);
+}
+</script>
+<!-- menu home -->
+	
+<section id="fh5co-home" data-section="services"  style=" height: 100%; background: url(../images/micro2.jpg); background-size: cover; background-attachment: fixed; background-position: center; background-repeat:no-repeat; min-height: 20px; " >
+		
+		<div class="work-overlay"></div>
+		<div class="container">
+		<br>
+<article class="col-lg-10 col-lg-offset-1 col-md-12  col-sm-12  col-xs-12" > 
+			<h1>QILLQAQ</h1>
+			
+						
+	
+		<br>
+	<div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-7">
+				<p class="text-justify">
+					Chay paradigma, modelo oculto de Markov, nisqan rurarqa achka rantikuna llamkaqkunata (Google Voice, Amazon Echo, Cortana o Siri) ancha allin kay, ichaqa manaraq paqway allinchu, ichaqa allin llamkaqmi (operativo). Chay modelo oculto de Markov nisqanta hayparqun límititañam, imapas musuq llamkaykunaqa kanman yapaykuyllañach. Yuyarinanchikmi chay rantikuna llamkaykunaqa kachkan pichqa chunka simikunallapaqmi. Sichum kay tecnologiaman qapipakusun hinaspaqa qichwa simiman qaypachichwanmi, llamkarinmi ichaqa tumpa allinniqllata, ASR sistemakunata huk simikunapi, ichaqa chay tecnología rurasqanchikmi qiparirunman utqayman hinaspa mawkayarqunman.
+				</p>
+			</div>
+			
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-5">
+			  <!--
+				<p>
+					Ances fly into your mouth.
+				</p> -->
+				<img src="../images/art/google-voice.jpg" class="img-responsive" style="margin-left: 55px;">
+				<br>
+				<img src="../images/art/amazon-echo.jpg" class="img-responsive" style="margin-left: 55px;">
+				<!--<img src="images/art/Hi-Im-Cortana.jpg" class="img-responsive">-->
+			</div>		
+		</div>
+	
+
+<!--***********************-->
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+				<p class="text-justify">
+					<img src="../images/art/training-data.jpg" class="img-responsive">
+				</p>
+			</div>
+			
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			  
+				<p class="text-justify">
+					Kunankunaqa simikunapaq llamkaykunaqa "redes neuronales" nisqanwanñam apakuchkan; yachaqpa curvan unaytam yacharin ichaqa wiñayta qawasqaqa allin llamkaymi.
+				</p> 
+			</div>		
+		</div>
+	
+<!--***********************-->
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<h3> Kaynatam ASRta rurana:</h3>
+					<p class="text-justify">
+						Chay sistema kikillantamanta rimayninchik riqsiq hinaspa qillqaman churaq, mana representación fonética intermedia nisqawan ruwakuq, kanmi  “deep bidirectional LSTM recurrent neural network architecture” chaymanta “Connectionist Temporal Classification objective function”
+						</lu>
+					</p>
+			</div>
+			
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			  <!--
+				<p>
+					Ances fly into your mouth.
+				</p> -->
+				<br>
+				<img src="../images/art/automatic-speech.jpg" class="img-responsive">
+				
+			</div>		
+		</div>
+
+	
+
+		<div class=" row">
+			<h3> Kay libreriakunawanmi kay llamkaypaq qispichirqaniku:</h3>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+			•	Torch
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+			•	Theano
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+			• TensorFlow
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+			•	NLTK
+			</div>
+		</div>
+		<br>			
+		<br>	
+	</div>	
+</div>
+</article>
+</section> 
+
+
+
+<style>
+
+
+div h1 {
+	font-size: 50px;
+	text-align: center; 
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	font-variant:
+}
+div article h3{
+	color: #fff;
+
+}
+div article h1{
+color: #fff;
+}
+
+
+div h3{
+
+	color: #fff;
+}
+
+
+
+figcaption{
+	color: #777777;
+} 
+#fh5co-home .work-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(143, 73, 135, 0.98);
+}
+</style>
+
+
+		
+	<footer id="footer" role="contentinfo">
+		<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
+		<div class="container">
+			<div class="">
+				<div class="col-md-12 text-center">
+					<p>&copy; Yachay wasikunapa huñunakuynin.<br>Kay qawanatam rurarqa<a href="https://twitter.com/nelsibelly" target="_blank">Nelsi Melgarejo</a></p>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="social social-circle">
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="https://www.facebook.com/Kamachikuq"><i class="icon-facebook"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCtr39nRxoLgf6JFEIuUykkg"><i class="icon-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js">
+	</script> 
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js">
+	</script>
+	<script type="text/javascript" src="../js/slick/slick.min.js"></script>
+	
+
+
+	<!-- jQuery -->
+	<!-- <script src="js/jquery.min.js"></script> -->
+	<!-- jQuery Easing -->
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="../js/jquery.stellar.min.js"></script>
+	<!-- Counter -->
+	<script src="../js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="../js/jquery.magnific-popup.min.js"></script>
+	<script src="../js/magnific-popup-options.js"></script> 
+
+
+
+	<script type="text/javascript" src="../js/prism.js"></script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script src="../css/slick.min.js"></script> 
+
+	
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="../js/jquery.style.switcher.js"></script>
+	  <script defer src="../js/jquery.flexslider.js"></script>
+
+  <script defer src="../js/demo.js"></script>
+	
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="../js/main.js"></script>
+
+
+	</body>
+</html>
+

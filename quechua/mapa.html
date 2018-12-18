@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+	<html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Siminchikkunarayku  </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Quechua" />
+	<meta name="keywords" content="siminchikkunarayku, quechua, runasimi, asr, reinvindicaci�n, kichwa, traductor, andes, andino, tecnolog�a, precolombino, aymara, ashanka, awjun, shipino, wanpis, kauki, kawsay" />
+
+  
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="../css/simple-line-icons.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="../css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+
+	
+  <!-- Modernizr -->
+  <script src="../js/modernizr.js"></script>
+
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<link rel="stylesheet" id="theme-switch" href="../css/style.css">
+	<link rel="stylesheet" id="theme-switch" href="../css/slick.css">
+	<link rel="stylesheet" id="theme-switch" href="../css/slick-theme.css">
+	<!-- End demo purposes only -->
+
+
+
+	<style type="text/css">
+	#musica {height:0;width:0;}
+	</style>
+
+	<script>
+	// Array con todas las imágenes que deseamos que se vayan cambiando a
+	// cada clic
+	var imagenes=Array("../images/icons/image1.png","../images/icons/image2.png");
+	var imagenVisible=0;
+ 
+	// Función que cambia la imagen actual por la siguiente
+	function cambiar(img)
+	{
+		imagenVisible++;
+		if(imagenVisible>=imagenes.length)
+		{
+			imagenVisible=0;
+		}
+		img.src=imagenes[imagenVisible];
+		cargarSiguienteImagen();
+	}
+ 
+	/**
+	 * Esta función carga la siguiente imagen para no tener que esperar su carga
+	 * en el momento de mostrarla.
+	 */
+	function cargarSiguienteImagen()
+	{
+		if((imagenVisible+1)<imagenes.length)
+		{
+			console.log(imagenVisible+1);
+			var imgTmp=new Image();
+			imgTmp.src=imagenes[imagenVisible+1];
+		}
+	}
+ 
+	window.onload=function() {
+		cargarSiguienteImagen();
+	}
+	
+	
+	
+	
+	function openAudio(word){
+			
+		    var imagen = document.getElementById('imagen').src;
+			var flag = "0";
+			if (imagen.includes('1')){
+				flag = 1;
+			} else {
+				flag = 0;
+			}			
+		
+			if (flag == "1"){
+				if (word == "quechua") quechua.play();
+				if (word == "que") que.play();
+				if (word == "como") como.play();
+				if (word == "inspiracion") inspiracion.play();
+				if (word == "proyectos") proyectos.play();
+				if (word == "nosotros") nosotros.play();
+				if (word == "eventos") eventos.play();
+				if (word == "contactos") contactos.play();
+				if (word == "idiomas") idiomas.play();
+				
+				if (word == "corpus") corpus.play();
+				if (word == "investigaciones") investigaciones.play();
+				if (word == "proyectos_menu") proyectos_menu.play();
+				if (word == "que_hacemos") que_hacemos.play();
+				if (word == "como_lo_hacemos") como_lo_hacemos.play();
+				if (word == "que_nos_inspira") que_nos_inspira.play();
+				
+				if (word == "proyectos_seccion") proyectos_seccion.play();
+				if (word == "corpus_quechua") corpus_quechua.play();
+				if (word == "traductor_quechua") traductor_quechua.play();
+				if (word == "programas_radio") programas_radio.play();
+				//if (word == "eventos") que_nos_inspira.play();
+				
+				if (word == "nosotros_seccion") nosotros_seccion.play();
+				if (word == "nosotros_frase1") nosotros_frase1.play();
+				
+				if (word == "escritores") escritores.play();
+				if (word == "artistas") artistas.play();
+				if (word == "comunidad") comunidad.play();
+				if (word == "investigadores_seccion") investigadores_seccion.play();
+				if (word == "ingenieros") ingenieros.play();
+				if (word == "universidades") universidades.play();
+				
+				if (word == "contactanos_seccion") contactanos_seccion.play();
+				if (word == "contactanos_frase") contactanos_frase.play();
+				
+				if (word == "estadisticas_seccion") estadisticas_seccion.play();
+				if (word == "continente") continente.play();
+				if (word == "paises") paises.play();
+				if (word == "personas") personas.play();
+				if (word == "lenguas") lenguas.play();
+			}
+	}
+		
+	</script>
+	
+	<style>
+	img {cursor:pointer;}
+	</style>
+	
+	<script type="text/javascript">
+	var quechua = new Audio();
+	var que = new Audio();
+	var como = new Audio();
+	var inspiracion = new Audio();
+	var proyectos = new Audio();
+	var nosotros = new Audio();
+	var eventos = new Audio();
+	var idiomas = new Audio();
+	var contactos = new Audio();
+
+	var corpus = new Audio();
+	var investigaciones = new Audio();
+	var proyectos_menu = new Audio();
+	var que_hacemos = new Audio();
+	var como_lo_hacemos = new Audio();
+	var que_nos_inspira = new Audio();
+
+	var proyectos_seccion = new Audio();
+	var corpus_quechua = new Audio();
+	var traductor_quechua = new Audio();
+	var programas_radio = new Audio();
+	var eventos = new Audio();
+
+	var nosotros_seccion = new Audio();
+	var nosotros_frase1 = new Audio();
+
+
+	var escritores = new Audio();
+	var artistas = new Audio();
+	var comunidad = new Audio();
+	var investigadores_seccion = new Audio();
+	var ingenieros = new Audio();
+	var universidades = new Audio();
+
+
+	var contactanos_seccion = new Audio();
+	var contactanos_frase = new Audio();
+
+	var estadisticas_seccion = new Audio();
+	var continente = new Audio();
+	var paises = new Audio();
+	var personas = new Audio();
+	var lenguas = new Audio();
+
+	quechua.src = 'audio/siminchikmanta.mp3';
+	como.src = 'audio/como.mp3';
+	que.src = 'audio/que.mp3';
+	inspiracion.src = 'audio/munayninchik.mp3';
+	proyectos.src = 'audio/ruwayninchik.mp3';
+	nosotros.src = 'audio/nuqanchik.mp3';
+	eventos.src = 'audio/llamkayninchikkuna.mp3';
+	idiomas.src = 'audio/idiomas.mp3';
+	contactos.src = 'audio/riqsinakusun_1.mp3';
+
+	corpus.src = 'audio/qillqakuna_uyariykunapas_1.mp3';
+	investigaciones.src = 'audio/yachay_maskapaykuna.mp3';
+	que_hacemos.src = 'audio/que_hacemos.mp3';
+	proyectos_menu.src = 'audio/ruwaykuna.mp3';
+	como_lo_hacemos.src = 'audio/imaynatam_ruwasunchik.mp3';
+	que_nos_inspira.src = 'audio/imam_sunqunchikta_kuyuchin.mp3';
+
+	proyectos_seccion.src = 'audio/ruwayninchikkuna.mp3';
+	corpus_quechua.src = 'audio/qillqakuna_uyariykunapas.mp3';
+	traductor_quechua.src = 'audio/siminchik_tikrachik.mp3';
+	programas_radio.src = 'audio/wayra_wasipi_rimaykuna.mp3';
+	eventos.src = 'audio/llamkayninchikkuna.mp3';
+
+
+	nosotros_seccion.src = 'audio/nuqaykumanta.mp3';
+	nosotros_frase1.src = 'audio/frase1.mp3';
+
+	escritores.src = 'audio/qillqaqkuna.mp3';
+	artistas.src = 'audio/takiqkuna.mp3';
+	comunidad.src = 'audio/runamasinchikkuna.mp3';
+	investigadores_seccion.src = 'audio/yachay_qatipaqkuna.mp3';
+	ingenieros.src = 'audio/qispichikkuna.mp3';
+	universidades.src = 'audio/hatun_yachay_wasikuna.mp3';
+
+	contactanos_seccion.src = 'audio/riqsinakusun_2.mp3';
+	contactanos_frase.src = 'audio/frase2.mp3';
+
+	estadisticas_seccion.src = 'audio/yupaykuna.mp3';
+	continente.src = 'audio/tiqsimuyu.mp3';
+	paises.src = 'audio/suyukuna.mp3';
+	personas.src = 'audio/runakuna.mp3';
+	lenguas.src = 'audio/simikuna.mp3';
+
+	</script>
+
+<!-- Demo CSS -->
+  <link rel="stylesheet" href="../css/demo.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+
+  <!-- Modernizr -->
+  <script src="../js/modernizr.js"></script>
+  
+  <style>
+    .flexslider {
+      margin-bottom: 10px;
+    }
+
+    .flex-control-nav {
+      position: relative;
+      bottom: auto;
+    }
+
+    .custom-navigation {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+
+    margin-top: -430px;    }
+
+@media screen and (max-width: 1100px) {
+    .custom-navigation {
+    margin-top: -15%;}
+}
+@media screen and (max-width: 440px) {
+    
+#fh5co-home{
+	height: 250px;
+}
+
+.flexslider{
+	display: none;
+}
+}
+
+    .custom-navigation > * {
+      display: table-cell;
+    }
+
+    .custom-navigation > a {
+      width: 50px;
+    }
+
+    .custom-navigation .flex-next {
+      text-align: right;
+    }
+  </style>
+  
+<style type="text/css">
+   #mapa { 
+   height: 750px;}
+   #fh5co-home {
+    color: #060606;}
+</style>
+
+   <!--goglemaps-->
+   <!--Escritores-->
+   
+   <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+   <script type="text/javascript">
+   
+   
+   
+   function getMap(flag){
+	initialize(flag);
+   }
+   
+   
+   
+   function initialize(flag) {
+     
+	 var marcadores;
+	 var zoom = 3
+	 var imagen
+	 var lat = 0.5540914
+	 var log = -17.1502234
+	 
+	 if (flag == 1) {
+		
+		imagen ="../images/icons/escritores.png"
+		zoom = 3
+		marcadores = [
+       ['Sixto Clodoaldo Soto',  41.8500300,-87.6500500 ],
+       ['Guillermo Delgado', ﻿34.00361,-119.72639],
+       ['Serafín Coronel Molina', 40.2671941,-86.13490189],
+	   ['Amalia Cordova', 38.9071923,-77.03687070000001],
+	   ['Pablo Landeo Muñoz', 48.856614,2.3522219000000177],
+	   ['Cesar Itier', 48.82742589999999,2.376227100000051],
+	   ['Oscar Chavez Gonzales', -13.6391954,-72.8929],
+	   ['Edison Borda Huyhua', -13.53195,-71.96746259999998],
+	   ['Rodolfo Cerron Palomino', -12.0686357,-75.21029759999999],
+	   ['Gavina Cordova Cusihuaman', -13.6616515,-73.3767641],
+	   ['Felix Julca Guerrero', -9.3250497,-77.56194189999997],
+	   ['Guillermo Caso Álvarez', -12.9951759,-74.7249281],
+	   ['Luis Mujica', -13.1638737,-74.22356409999998],
+	   ['Apolinario Sldivar Bolivar ', -13.6391954,-72.8929],
+	   ['Geral Taylor ', -12.0463731,-77.042754]
+     ];
+	 }
+	 
+	 if (flag == 2){
+		imagen ="../images/icons/radios.png"
+		 lat = -9.189967
+		log = -75.015152
+		zoom = 6
+		marcadores =[['Radio Willaq',  -12.077493,-77.09340170000002 ],
+       ['Radio Onda Azul', -15.840014,-70.029294],
+	   ['Radio Titanka', -13.6556084,-73.3821423],
+	   ['Radio Juliaca La Decana', -15.4904566,-70.12905850000004],
+	   ['Radio Sicuani', -14.2686449,-71.22679549999998],
+	   ['Radio Andahuylas', -13.6553356,-73.38307609999998],
+	   ['Radio Pachamama', -15.8452084,-70.02299110000001],
+	   ['Radio Inti Raymi', -13.5231332,-71.98289260000001],
+	   ['Radio Quispillaccta', -13.1653728,-74.22875390000002],
+	   ['Radio Tahuantinsuyo', -13.5232884,-71.97406189999998],
+	   ['Radio Cultura Amauta', -12.9384113,-74.25021219999996],
+	   ['Radio Pachatusan', -14.269675636037405,-71.225985288621],
+	   ['Radio Apurimac', -13.656778111100412,-73.38202133774757]
+	   
+	   
+	   ];
+	 }
+	 
+	 if (flag == 3){
+		imagen ="../images/icons/artista.png"
+	  lat = -9.189967
+	 log = -75.015152
+		zoom = 6
+		marcadores = [['Liberato',  -14.0504533,-73.08774900000003 ],
+       ['Alborada', ﻿-12.8705136,-72.4462547],
+	   ['Uchpa', -13.1638737,-74.22356409999998],
+	   ['Killary', -16.4090474,-71.53745099999998],
+	   ['Sylvia Falcón', -12.0463731,-77.042754],
+	   ['Renata Flores Rivera', -13.304102866767076,-73.97918701171875],
+	   
+	   ];
+	 }
+	 
+	 
+     var map = new google.maps.Map(document.getElementById('mapa'), {
+       zoom: zoom,
+       center: new google.maps.LatLng(lat,log),
+       mapTypeId: google.maps.MapTypeId.ROADMAP
+     });
+     var infowindow = new google.maps.InfoWindow();
+     var marker, i;
+     for (i = 0; i < marcadores.length; i++) {  
+       marker = new google.maps.Marker({
+         position: new google.maps.LatLng(marcadores[i][1], marcadores[i][2]),
+         map: map,
+		 icon: imagen
+       });
+       google.maps.event.addListener(marker, 'click', (function(marker, i) {
+         return function() {
+           infowindow.setContent(marcadores[i][0]);
+           infowindow.open(map, marker);
+         }
+       })(marker, i));
+     }
+   }
+   google.maps.event.addDomListener(window, 'load', initialize);
+   </script>
+   
+ 	</head>
+	<body>
+
+	<section>
+		<div class="" style="background: #00a7a3; height:50px;">
+			<div class="container">
+				<li class="multilang">
+					<a href="#" data-nav-section="idiomas" onmouseover="openAudio('idiomas');" onmouseout="idiomas.pause();" >
+						<select name="lang" class="jflanguageselection" size="1" onchange="document.location.replace(this.value);">
+							<option value="../mapa.html" >Español</option>
+							<option value="../ingles/mapa.html">English</option>
+							<option value="../quechua/mapa.html" selected="selected">Quechua</option>
+						</select>
+					</a> 
+				</li>
+				<li class="suscripcion">
+					<a href="suscripcion.html" class="btn btn-primary ">Yaykupakamuy</a>
+				</li>
+				
+			</div>
+		</div>
+	</section>
+	<header role="banner" id="fh5co-header">
+
+		<div class="container">
+			<nav class="navbar navbar-default">
+		        <div class="navbar-header">
+		        	<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+					<a class="navbar-brand" style = "background-image: url(../images/logoreal.png); width: 60px; height: 60px;" href="index.html">
+						<p style="  text-indent: 60px;   text-transform: uppercase; color: #000; font-size: 18px; ">siminchikkunarayku</p>
+					</a> 
+				</div>
+				
+				
+		        <div id="navbar" class="navbar-collapse collapse">
+					  <ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#" data-nav-section="home" onmouseover="openAudio('quechua')" onmouseout="quechua.pause();"><span>Qichwa</span></a></li>
+						<li><a href="#" data-nav-section="que" onmouseover="openAudio('que');" onmouseout="que.pause();"><span>¿Imataq?</span></a></li>
+						<li><a href="#" data-nav-section="work" onmouseover="openAudio('como');" onmouseout="como.pause();"><span>¿Imaynata?</span></a></li>
+						<li><a href="#" data-nav-section="testimonials" onmouseover="openAudio('inspiracion');" onmouseout="inspiracion.pause();"><span>Munayninchik</span></a></li>
+						<li><a href="#" data-nav-section="services" onmouseover="openAudio('proyectos');" onmouseout="proyectos.pause();" ><span>Ruwayninchik</span></a></li>
+						<li><a href="#" data-nav-section="about" onmouseover="openAudio('nosotros');" onmouseout="nosotros.pause();" ><span>Ñuqanchik</span></a></li>
+						<li><a href="#" data-nav-section="eventos" onmouseover="openAudio('eventos');" onmouseout="eventos.pause();" ><span>Willakuykuna</span></a></li>
+						<li><img id="imagen" src="../images/icons/image1.png" onclick="cambiar(this);" class="img-responsive; background-position:center; " style="width:20px; height:20px; margin-top: 20px;"></li>
+					  </ul>
+		        </div>
+			</nav>
+			  
+		  </div>
+	</header>
+
+
+<script> 
+function openSection(texto){
+	window.location.replace("index.html#"+texto);
+	
+}
+</script>
+
+<!-- menu home -->
+	
+<section id="fh5co-home" data-section="traductor" style="height: 100%;" >
+	
+	
+		<div id="floating-panel-title" style="mapa-responsive"> 
+			<h1  style="font-size:4vw; color: #fff;" class="mundo" >Qichwa simi tiqsi muyupi&nbsp;&nbsp;</h1>
+		</div>
+	<div class="row">
+	
+		<div id="floating-panel">
+			<ul class="nav navbar-nav" >
+					<li id="escritores" class=""><a  href="#" onclick="getMap('1')" class="btnn1 btnn-primary">Qillqaqkuna&nbsp;&nbsp;<img src="../images/icons/escritores.png" height="50px"></a></li>
+					<li id="artistas" class=""><a  href="#"   onclick="getMap('3')" class="btnn2 btnn-primary">Takiq tusuqkunapas&nbsp;&nbsp;<img  src="../images/icons/artista.png" height="50px"></a></li>
+					<li id="radios" class=""><a  href="#"   onclick="getMap('2')" class="btnn3 btnn-primary">Wayra wasikuna&nbsp;&nbsp;<img  src="../images/icons/radios.png" height="50px"></a></li>
+			</ul>
+		</div>
+	</div>
+					  
+		
+
+	
+		<div id="mapa"  style="position: relative; overflow: hidden; responsive" >
+		</div>
+
+	
+
+	
+</section>
+	
+	<footer id="footer" role="contentinfo">
+		<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
+		<div class="container">
+			<div class="">
+				<div class="col-md-12 text-center">
+					<p>&copy; Yachay wasikunapa huñunakuynin.</p>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="social social-circle">
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="https://www.facebook.com/Kamachikuq"><i class="icon-facebook"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCtr39nRxoLgf6JFEIuUykkg"><i class="icon-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js">
+	</script> 
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js">
+	</script>
+	<script type="text/javascript" src="../js/slick/slick.min.js"></script>
+	
+
+
+	<script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+      	dots : true,
+      	speed: 1000,
+      	autoplay: true
+      });
+    });
+  </script>
+
+
+	<!-- jQuery -->
+	<!-- <script src="js/jquery.min.js"></script> -->
+	<!-- jQuery Easing -->
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="../js/jquery.stellar.min.js"></script>
+	<!-- Counter -->
+	<script src="../js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="../js/jquery.magnific-popup.min.js"></script>
+	<script src="../js/magnific-popup-options.js"></script> 
+
+
+
+	<script type="text/javascript" src="../js/prism.js"></script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script src="../css/slick.min.js"></script> 
+
+	<!-- Google Map -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false">
+	</script>
+
+
+
+	<script src="../js/google_map.js"></script>
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="../js/jquery.style.switcher.js"></script>
+	  <script defer src="../js/jquery.flexslider.js"></script>
+
+  <script defer src="../js/demo.js"></script>
+	<script>
+		$(function(){
+			$('#colour-variations ul').styleSwitcher({
+				defaultThemeId: 'theme-switch',
+				hasPreview: false,
+				cookie: {
+		          	expires: 30,
+		          	isManagingLoad: true
+		      	}
+			});	
+			$('.option-toggle').click(function() {
+				$('#colour-variations').toggleClass('sleep');
+			});
+		}); 
+	</script>
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="../js/main.js"></script>  
+
+
+	</body>
+</html>
+
