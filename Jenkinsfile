@@ -16,7 +16,7 @@ pipeline {
 			steps {
 				withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'docker-hub-credentials', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD']]){
 					sh '''
-						docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+						docker login -u $DOCKER_USERNAME --password-stdin $DOCKER_PASSWORD
 						docker push kamachikuq/capstone
 					'''
 				}
