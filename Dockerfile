@@ -1,4 +1,4 @@
-FROM nginx
+FROM busybox
 ## Step 1:
 # Create a working directory
 WORKDIR /capstone
