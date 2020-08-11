@@ -11,21 +11,12 @@ pipeline {
 				}
 			}
 		}
-        	stage('Push image') {
-			steps {
-            			docker withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-                			sh '''
-						app.push("${env.BUILD_NUMBER}")
-                				app.push("latest")
-					'''
-            			}
-        		}
-		}
+
 		stage('Push Image To Dockerhub') {
 			steps {
-				withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'docker-hub-credentials', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD']]){
+				withCredentials('https://registry.hub.docker.com', 'docker-hub-credentials'){
 					sh '''
-						docker login -u $DOCKER_USERNAME --password-stdin $DOCKER_PASSWORD
+						docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 						docker push kamachikuq/capstone
 					'''
 				}
