@@ -11,7 +11,16 @@ pipeline {
 				}
 			}
 		}
-
+        	stage('Push image') {
+			steps {
+            			docker withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+                			sh '''
+						app.push("${env.BUILD_NUMBER}")
+                				app.push("latest")
+					'''
+            			}
+        		}
+		}
 		stage('Push Image To Dockerhub') {
 			steps {
 				withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'docker-hub-credentials', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD']]){
