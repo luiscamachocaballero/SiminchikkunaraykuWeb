@@ -23,18 +23,10 @@ pipeline {
 			}
 		}
 
-		stage('Set current kubectl context') {
-			steps {
-					sh '''
-						kubectl config use-context arn:aws:eks:us-east-1:142977788479:cluster/capstonecluster
-					'''
-			}
-		}
-
 		stage('Deploy blue container') {
 			steps {
-          sh '''	
-            kubectl apply -f ./blue-controller.json
+			          	sh '''	
+            					kubectl apply -f ./blue-controller.json
 					'''
 			}
 		}
