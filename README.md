@@ -1,3 +1,7 @@
+https://medium.com/@andresaaap/capstone-cloud-devops-nanodegree-4493ab439d48
+https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
+https://medium.com/@andresaaap/jenkins-pipeline-for-blue-green-deployment-using-aws-eks-kubernetes-docker-7e5d6a401021
+
 # SiminchikkunaraykuWeb
 
 
