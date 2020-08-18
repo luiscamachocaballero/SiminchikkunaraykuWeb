@@ -26,7 +26,7 @@ pipeline {
 		stage('Set current kubectl context') {
 			steps {
 					sh '''
-						kubectl config use-context arn:aws:eks:us-east-1:142977788479:cluster/capstonecluster
+						kubectl config use-context arn:aws:eks:us-east-1:726105267651:cluster/capstonecluster
 					'''
 			}
 		}
