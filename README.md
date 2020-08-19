@@ -1,6 +1,60 @@
 # Project 5 - Cloud DevOps Engineer Capstone Project
 
-> In this project, I applied my skills and knowledge which was developed throughout the Cloud DevOps Nanodegree program.
+
+
+## About Project: 
+
+> I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS which is Blue/Green Deployment. The images below shows the stages of the pipelines. In fact I used not only one, but two pipelines. The Jenkinsfile of the first pipeline is into the folder "cluster". I didn't found the way to run both pipelines located in the same repository, then the Jenkinsfile in "cluster" was run from another repository. 
+
+![img-1](capstoneImages/PipelinesDescription.png)
+
+
+## Run the project:
+```sh
+* Please follow to steps of screenshot in Images-of-result-deploy folder.
+
+Set up Jenkins and the necessary packages
+
+    In AWS Launch the EC2 t2.micro for the free tier, pick “Ubuntu 18.04 LTS amd64
+    Connect your instance using SSH. This guide is helpful https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
+
+Example command:
+
+ssh -i /path/my-key-pair.pem ubuntu@ec2-198-51-100-1.compute-1.amazonaws.com
+
+You need to make sure that the IAM user that you are using has all of the correct permissions.
+
+3. Install java JDK
+
+4. Install Jenkins On Ubuntu
+
+5. Set Up Jenkins
+
+6. Install the Blue Ocean plugin in jenkins
+
+7. Install the pipeline-aws plugin in jenkins
+
+8. Install docker. You can use this tutorial for linux ubuntu https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+
+9. Install the necessary dependencies to deploy your cluster with AWS EKS. Follow this tutorial https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html. Please look at the recomendations in this guide question 14 https://medium.com/@andresaaap/capstone-cloud-devops-nanodegree-4493ab439d48
+
+10. Create in Jenkins the credentials for AWS
+
+## The files included are:
+```sh
+* /capstoneImages : Screenshot the result of deploy.
+* /cluster : it includes CloudFormation Script of Cluster Pipeline Jenkinsfile 
+* Jenkinsfile : Deployment Script of Containers Pipeline Jenkinsfile
+* Dockerfile : Dockerfile for building the image 
+* green-controller.json : Create a replication controller green pod
+* green-service.json : Create the green service
+* blue-controller.json : Create a replication controller blue pod
+* blue-service.json : Create the blue service
+* index.html : Web site Index file.
+```
+
+```
+
 
 ## Project Tasks:
 
@@ -11,46 +65,10 @@
 * Building Kubernetes clusters
 * Building Docker containers in pipelines
 
-## About Project: 
 
-> I created a CI/CD pipeline for a basic website that deploys to a cluster in AWS EKS which is Blue/Green Deployment.
-
-![img-1](capstoneImages/PipelinesDescription.png)
-
-## Project Requirement:
-
-> To be able to use this CI/CD pipeline you will need to install:
-
-* Jenkins
-* Blue Ocean Plugin in Jenkins
-* Pipeline-AWS Plugin in Jenkins
-* Docker
-* Pip
-* AWS Cli
-* Eksctl
-* Kubectl
-
-## The files included are:
-```sh
-* /Images-of-result-deploy : Screenshot the result of deploy.
-* /Create-clusters-pipeline : CloudFormation Script of Cluster Pipeline file 
-* /Deploy-containers-pipeline : Deployment Script of Containers Pipeline file
-* Jenkinsfile : Jenkinsfile for Creating Pipeline
-* Dockerfile : Dockerfile for building the image 
-* green-controller.json : Create a replication controller green pod
-* green-service.json : Create the green service
-* blue-controller.json : Create a replication controller blue pod
-* blue-service.json : Create the blue service
-* index.html : Web site Index file.
-```
-
-## Run the project:
-```sh
-* Please follow to steps of screenshot in Images-of-result-deploy folder.
-```
-https://medium.com/@andresaaap/capstone-cloud-devops-nanodegree-4493ab439d48
-https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
-https://medium.com/@andresaaap/jenkins-pipeline-for-blue-green-deployment-using-aws-eks-kubernetes-docker-7e5d6a401021
+* https://medium.com/@andresaaap/capstone-cloud-devops-nanodegree-4493ab439d48
+* https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
+* https://medium.com/@andresaaap/jenkins-pipeline-for-blue-green-deployment-using-aws-eks-kubernetes-docker-7e5d6a401021
 
 # SiminchikkunaraykuWeb
 
