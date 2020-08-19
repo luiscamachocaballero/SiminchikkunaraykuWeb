@@ -11,32 +11,33 @@
 
 ## Run the project:
 ```sh
-* Please follow to steps of screenshot in Images-of-result-deploy folder.
 
-Set up Jenkins and the necessary packages
+1. In AWS Launch the EC2 t2.micro for the free tier, pick “Ubuntu 18.04 LTS amd64"
 
-    In AWS Launch the EC2 t2.micro for the free tier, pick “Ubuntu 18.04 LTS amd64
-    Connect your instance using SSH. This guide is helpful https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
-
-Example command:
-
-ssh -i /path/my-key-pair.pem ubuntu@ec2-198-51-100-1.compute-1.amazonaws.com
-
-You need to make sure that the IAM user that you are using has all of the correct permissions.
+2. make sure that the IAM user that you are using has all of the correct permissions.
 
 3. Install java JDK
 
 4. Install Jenkins On Ubuntu
 
-5. Set Up Jenkins
+5. Set up Jenkins, install the blue ocean and pipeline-aws plugins in jenkins
 
-6. Install the Blue Ocean plugin in jenkins
+6. Create account in docker.com
 
-7. Install the pipeline-aws plugin in jenkins
+7. Register AWS and Docker credentials into Jenkins (see folder capstoneImages)
 
-8. Install docker. You can use this tutorial for linux ubuntu https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
-
-9. Install the necessary dependencies to deploy your cluster with AWS EKS. Follow this tutorial https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html. Please look at the recomendations in this guide question 14 https://medium.com/@andresaaap/capstone-cloud-devops-nanodegree-4493ab439d48
+8. Install docker. 
+    sudo apt-get update
+    sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    sudo apt-key fingerprint 0EBFCD88
+    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    sudo apt-get update
+    sudo apt-get install docker-ce docker-ce-cli containerd.io
+    sudo usermod -a -G docker jenkins
+    sudo /etc/init.d/jenkins restart
+   
+9. Install the necessary dependencies to deploy your cluster with AWS EKS. Follow this tutorial https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html. 
 
 10. Create in Jenkins the credentials for AWS
 
@@ -65,9 +66,8 @@ You need to make sure that the IAM user that you are using has all of the correc
 * Building Kubernetes clusters
 * Building Docker containers in pipelines
 
-
+Please look at the recomendations in this links:
 * https://medium.com/@andresaaap/capstone-cloud-devops-nanodegree-4493ab439d48
-* https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
 * https://medium.com/@andresaaap/jenkins-pipeline-for-blue-green-deployment-using-aws-eks-kubernetes-docker-7e5d6a401021
 
 # SiminchikkunaraykuWeb
