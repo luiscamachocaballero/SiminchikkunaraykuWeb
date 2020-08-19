@@ -15,7 +15,7 @@
 
 > I created a CI/CD pipeline for a basic website that deploys to a cluster in AWS EKS which is Blue/Green Deployment.
 
-![img-1](Images-of-result-deploy/Project.png)
+![img-1](capstoneImages/PipelinesDescription.png)
 
 ## Project Requirement:
 
