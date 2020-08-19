@@ -41,32 +41,7 @@ I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS wh
 
 10. Build commits to pipelines, review logs and correct bugs
 
-## The files included are:
-```sh
-* /capstoneImages : Screenshot the result of deploy.
-* /cluster : it includes CloudFormation Script of Cluster Pipeline Jenkinsfile 
-* Jenkinsfile : Deployment Script of Containers Pipeline Jenkinsfile
-* Dockerfile : Dockerfile for building the image 
-* green-controller.json : Create a replication controller green pod
-* green-service.json : Create the green service
-* blue-controller.json : Create a replication controller blue pod
-* blue-service.json : Create the blue service
-* index.html : Web site Index file.
-```
-
-```
-
-
-## Project Tasks:
-
-* Working in AWS
-* Using Jenkins to implement Continuous Integration and Continuous Deployment
-* Building pipelines
-* Working with CloudFormation to deploy clusters
-* Building Kubernetes clusters
-* Building Docker containers in pipelines
-
-Please look at the recomendations in this links:
+## Please look at the recomendations in these links:
 * https://medium.com/@andresaaap/capstone-cloud-devops-nanodegree-4493ab439d48
 * https://medium.com/@andresaaap/jenkins-pipeline-for-blue-green-deployment-using-aws-eks-kubernetes-docker-7e5d6a401021
 
