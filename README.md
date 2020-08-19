@@ -3,8 +3,7 @@
 
 
 ## About Project: 
-
-> I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS which is Blue/Green Deployment. The images below shows the stages of the pipelines. In fact I used not only one, but two pipelines. The Jenkinsfile of the first pipeline is into the folder "cluster". I didn't found the way to run both pipelines located in the same repository, then the Jenkinsfile in "cluster" was run from another repository. 
+I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS which is Blue/Green Deployment. The images below shows the stages of the pipelines. In fact I used not only one, but two pipelines. The Jenkinsfile of the first pipeline is into the folder "cluster". I didn't found the way to run both pipelines located in the same repository, then the Jenkinsfile in "cluster" was run from another repository. 
 
 ![img-1](capstoneImages/PipelinesDescription.png)
 
@@ -37,9 +36,10 @@
     sudo usermod -a -G docker jenkins
     sudo /etc/init.d/jenkins restart
    
-9. Install the necessary dependencies to deploy your cluster with AWS EKS. Follow this tutorial https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html. 
+9. Install the necessary dependencies to deploy your cluster with AWS EKS. Follow this tutorial 
+    https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html. 
 
-10. Create in Jenkins the credentials for AWS
+10. Build commits to pipelines, review logs and correct bugs
 
 ## The files included are:
 ```sh
@@ -70,22 +70,5 @@ Please look at the recomendations in this links:
 * https://medium.com/@andresaaap/capstone-cloud-devops-nanodegree-4493ab439d48
 * https://medium.com/@andresaaap/jenkins-pipeline-for-blue-green-deployment-using-aws-eks-kubernetes-docker-7e5d6a401021
 
-# SiminchikkunaraykuWeb
 
-
-![screenshot](images/main.PNG)
-
-The site is open source and is a web page to save the native communities from Peru.
-
-### What do we do?
-
-The mission of Siminchikkunarayku is to preserve and protect languages at risk of extinction, especially languages and to promote the public use of these languages through the creation and/or use of information and communication technologies,especially the development of computational portability. The vision of Siminchikkunarayku is that all communities of language speakers at risk of extinction, especially the South American languages, have the technological means to support and spread their language. If we lose our tongues we will lose a great treasure, on the contrary if our tongues flourish they will bring great benefits to the entire Nation, products and services valued at various points of GDP. As if that were not enough, the development of our languages will consolidate national inclusion and cohesion, ensuring sustainable and peaceful human development.
-
-### How do we do it?
-
-We bring together communities, researchers, writers, artists, engineers and universities from all over South America to gather and create the largest multimedia content to computationally process our ancient indigenous languages for the benefit of all.
-
-### Who do I talk to?
-
-Rodolfo Zevallos rjzevallos.salazar@gmail.com and Luis Camacho Caballero camacho.l@pucp.pe
 
