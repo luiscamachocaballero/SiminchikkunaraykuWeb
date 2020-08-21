@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Lint HTML') {
 			steps {
-				sh 'tidy -q -e index.html'
+				sh 'tidy -q -e raw_audio.html'
 			}
 		}		
 		stage('Build Docker Image') {
