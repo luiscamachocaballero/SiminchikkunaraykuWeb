@@ -21,8 +21,8 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+
+
 
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 	<!-- Animate.css -->
@@ -755,7 +755,7 @@
 						</li>
 						<li>
 						  <a href="https://panamericana.pe/tecnologia/239562-quechua-podra-hablarse-planeta-gracias-proyecto-puedes-parte" target="_blank">
-							<img src="https://img.panamericana.pe/noticia/640-1517325760721.jpg" style="width: 564px;	height: 358px;">
+							<img src="images/guitar.jpg" style="width: 564px;	height: 358px;">
 						  </a>
 						  <p class="flex-caption">¡El Quechua podrá hablarse en todo el planeta gracias a este proyecto y tú puedes ser parte de él.!</p>
 						</li>
@@ -933,7 +933,7 @@ $(window).load(function() {
 
 	<script type="text/javascript">
     $(document).ready(function(){
-      $('.slider').slick({
+      $('.slider').not('.slick-initialized')slick({
       	dots : true,
       	speed: 1000,
       	autoplay: true
@@ -995,9 +995,6 @@ $(window).load(function() {
   
 
 	<script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
     $(window).load(function(){
       $('.flexslider').flexslider({
         animation: "slide",
@@ -1012,7 +1009,7 @@ $(window).load(function() {
   
   <script type="text/javascript">
   	$(document).ready(function() {
-    $('.data').slick();
+    $('.data').not('.slick-initialized').slick();
 	});
   </script>
 
