@@ -354,7 +354,7 @@
 
         if ( asNavFor !== null && typeof asNavFor === 'object' ) {
             asNavFor.each(function() {
-                var target = $(this).slick('getSlick');
+                var target = $(this).not('.slick-initialized').slick('getSlick');
                 if(!target.unslicked) {
                     target.slideHandler(index, true);
                 }

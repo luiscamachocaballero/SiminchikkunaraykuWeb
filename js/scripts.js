@@ -21,7 +21,7 @@ $(document).ready(function() {
         centerMode: true,
         variableWidth: true
     });
-    $('.data').slick();
+    $('.data').not('.slick-initialized').slick();
     $('.one-time').slick({
         dots: true,
         infinite: true,
