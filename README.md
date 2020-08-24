@@ -1,7 +1,5 @@
 # Project 5 - Cloud DevOps Engineer Capstone Project
 
-
-
 ## About Project: 
 I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS which is Blue/Green Deployment. The images below shows the stages of the pipelines. In fact I used not only one, but two pipelines. The Jenkinsfile of the first pipeline is into the folder "cluster". I didn't found the way to run both pipelines located in the same repository, then the Jenkinsfile in "cluster" was run from another repository. 
 
@@ -9,7 +7,6 @@ I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS wh
 
 
 ## Run the project:
-```sh
 
 1. In AWS Launch the EC2 t2.micro for the free tier, pick “Ubuntu 18.04 LTS amd64"
 
@@ -41,7 +38,7 @@ I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS wh
 
 10. Build commits to pipelines, review logs and correct bugs
 
-## Please look at the recomendations in these links:
+## Look at the recommendations in these links:
 * https://medium.com/@andresaaap/capstone-cloud-devops-nanodegree-4493ab439d48
 * https://medium.com/@andresaaap/jenkins-pipeline-for-blue-green-deployment-using-aws-eks-kubernetes-docker-7e5d6a401021
 
