@@ -14,7 +14,7 @@ I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS wh
 
 3. Install java JDK
 
-4. Install Jenkins On Ubuntu
+4. Install Jenkins on the AWS EC2
 
 5. Set up Jenkins, install the blue ocean and pipeline-aws plugins in jenkins
 
@@ -23,15 +23,15 @@ I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS wh
 7. Register AWS and Docker credentials into Jenkins (see folder capstoneImages)
 
 8. Install docker. 
-    sudo apt-get update
-    sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-    sudo apt-key fingerprint 0EBFCD88
-    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-    sudo apt-get update
-    sudo apt-get install docker-ce docker-ce-cli containerd.io
-    sudo usermod -a -G docker jenkins
-    sudo /etc/init.d/jenkins restart
+   * sudo apt-get update
+   * sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+   * curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   * sudo apt-key fingerprint 0EBFCD88
+   * sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+   * sudo apt-get update
+   * sudo apt-get install docker-ce docker-ce-cli containerd.io
+   * sudo usermod -a -G docker jenkins
+   * sudo /etc/init.d/jenkins restart
    
 9. Install the necessary dependencies to deploy your cluster with AWS EKS. Follow this tutorial 
     https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html. 
