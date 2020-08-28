@@ -16,7 +16,7 @@ I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS wh
 
 4. Install Jenkins on the AWS EC2
 
-5. Set up Jenkins, install the blue ocean and pipeline-aws plugins in jenkins
+5. Set up Jenkins, install the blue ocean (https://plugins.jenkins.io/blueocean) and pipeline-aws (https://plugins.jenkins.io/pipeline-aws) plugins in jenkins
 
 6. Create account in docker.com
 
