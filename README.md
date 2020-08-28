@@ -35,7 +35,7 @@ I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS wh
    * sudo /etc/init.d/jenkins restart
    
 9. Install the necessary dependencies to deploy your cluster with AWS EKS. Follow this tutorial 
-    https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html. 
+    https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html. Realize only kubectl is needed, neither minikube nor microk8s
 
 10. In Jenkins, use the Blue Ocean link to create a new pipeline
    * create a GitHub token using the link https://github.com/settings/tokens/new?scopes=repo,read:user,user:email,write:repo_hook or use a previous created token
