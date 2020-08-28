@@ -31,7 +31,7 @@ pipeline {
 			steps {
 				withAWS(region:'us-east-1', credentials:'ecr_credentials') {
 					sh '''
-						kubectl config use-context arn:aws:eks:us-east-1:726105267651:cluster/capstonecluster
+						kubectl config use-context arn:aws:eks:us-east-1:726105267651:cluster/udacitycluster
 					'''
 				}
 			}
