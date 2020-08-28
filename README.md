@@ -10,9 +10,10 @@ I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS wh
 
 1. In AWS Launch the EC2 t2.micro for the free tier, pick “Ubuntu 18.04 LTS amd64"
 
-2. make sure that the IAM user that you are using has all of the correct permissions.
+2. Make sure that the IAM user that you are using has all of the correct permissions.
 
-3. Install java JDK
+3. Henceforth, to install packages, log in your AWS EC2 using ssh and a pem file, like this: 
+   * ssh -i "pipeline.pem" ubuntu@ec2-54-160-81-248.compute-1.amazonaws.com
 
 4. Install Jenkins on the AWS EC2
 
@@ -38,7 +39,8 @@ I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS wh
 
 10. In Jenkins, use the Blue Ocean link to create a new pipeline
    * create a GitHub token using the link https://github.com/settings/tokens/new?scopes=repo,read:user,user:email,write:repo_hook or use a previous created token
-11. Build commits to pipelines, review logs and correct bugs
+11. Install tidy, sudo apt-get install -y tidy
+12. Build commits to pipelines, review logs and correct bugs
 
 ## Look at the recommendations in these links:
 * https://medium.com/@andresaaap/capstone-cloud-devops-nanodegree-4493ab439d48
