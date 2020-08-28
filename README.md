@@ -40,7 +40,7 @@ I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS wh
 10. In Jenkins, use the Blue Ocean link to create a new pipeline
    * create a GitHub token using the link https://github.com/settings/tokens/new?scopes=repo,read:user,user:email,write:repo_hook or use a previous created token
 11. Install tidy, sudo apt-get install -y tidy
-12. Copy the content of folder "cluster" to another repository and then linked this to a pipeline in Jenkins
+12. Copy the content of folder "cluster" to another repository and then linked that one to a pipeline in Jenkins
 13. Linked this repository to another pipeline
 14. Build commits to pipelines, review logs and correct bugs
 
