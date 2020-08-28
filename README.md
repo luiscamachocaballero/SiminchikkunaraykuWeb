@@ -36,7 +36,9 @@ I created a CI/CD pipeline for a website that deploys to a cluster in AWS EKS wh
 9. Install the necessary dependencies to deploy your cluster with AWS EKS. Follow this tutorial 
     https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html. 
 
-10. Build commits to pipelines, review logs and correct bugs
+10. In Jenkins, use the Blue Ocean link to create a new pipeline
+   * create a GitHub token using the link https://github.com/settings/tokens/new?scopes=repo,read:user,user:email,write:repo_hook or use a previous created token
+11. Build commits to pipelines, review logs and correct bugs
 
 ## Look at the recommendations in these links:
 * https://medium.com/@andresaaap/capstone-cloud-devops-nanodegree-4493ab439d48
